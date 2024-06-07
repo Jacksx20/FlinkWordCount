@@ -9,6 +9,7 @@ public class FlinkWordCount {
     public FlinkWordCount() {
     }
 
+    @SuppressWarnings({ "unchecked", "deprecation" })
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment senv = StreamExecutionEnvironment.getExecutionEnvironment();
         senv.setRuntimeMode(RuntimeExecutionMode.BATCH);
